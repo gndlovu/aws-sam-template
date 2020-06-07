@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 11
+    },
+    "rules": {
+        "semi": 0,
+        "space-before-function-paren": "off",
+        "indent": [
+            "error",
+            4
+        ],
+        "no-prototype-builtins": 0,
+        "function-paren-newline": [
+            2,
+            "multiline"
+        ],
+        "max-statements": [
+            1,
+            30
+        ],
+        "valid-jsdoc": [
+            1,
+            {
+                // http://eslint.org/docs/rules/valid-jsdoc
+                "requireParamDescription": false,
+                "requireReturnDescription": false
+            }
+        ]
+    }
+}
